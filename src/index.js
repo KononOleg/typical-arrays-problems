@@ -1,6 +1,6 @@
 
 exports.min = function min (array) {
-    if(array.length==0 || array === undefined)
+    if(array.length==0 || array == undefined)
     {
       return 0;
     }
@@ -8,7 +8,7 @@ exports.min = function min (array) {
     {
       var minimal = array[0];
       for(var i = 0; i < array.length; i++){
-        if (array[i] < min) {
+        if (array[i] < minimal) {
           minimal = array[i];
         }
         return minimal;
@@ -17,7 +17,7 @@ exports.min = function min (array) {
 }
 
 exports.max = function max (array) {
-  if(array.length==0 || array === undefined)
+  if(array.length==0 || array == undefined)
     {
       return 0;
     }
@@ -35,7 +35,7 @@ exports.max = function max (array) {
 
 exports.avg = function avg (array) {
 
-      if(array.length==0 || array === undefined)
+      if(array.length==0 || array == undefined)
       {
         return 0;
       }

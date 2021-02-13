@@ -6,12 +6,12 @@ exports.min = function min (array) {
     }
     else 
     {
-      var min = array[0];
+      var minimal = array[0];
       for(var i = 0; i < array.length; i++){
         if (array[i] < min) {
-          min = array[i];
+          minimal = array[i];
         }
-        return min;
+        return minimal;
     }
   }
 }
@@ -23,12 +23,12 @@ exports.max = function max (array) {
     }
     else 
     {
-      var max = array[0];
+      var maximal = array[0];
       for(var i = 0; i < array.length; i++){
-        if (array[i] > max) {
-          max = array[i];
+        if (array[i] > maximal) {
+          maximal = array[i];
         }
-        return max;
+        return maximal;
     }
   }
 }
@@ -44,7 +44,7 @@ exports.avg = function avg (array) {
         var sum=0;
         for(var i=0;i<array.length;i++)
         {
-            sum=+array[i];
+            sum+=array[i];
         }
         return sum/array.length;
       }

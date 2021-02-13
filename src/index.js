@@ -1,34 +1,35 @@
 
 exports.min = function min (array) {
-
-  if(array.length==0 || array === undefined)
-  {
-    return 0;
-  }
-  else 
-  {
-  	var min = array[0];
-		for(var i = 0; i < array.length; i++){
-			if (array[i] < min) {
-				min = array[i];
-			}
-      return min;
+    if(array.length==0 || array === undefined)
+    {
+      return 0;
+    }
+    else 
+    {
+      var min = array[0];
+      for(var i = 0; i < array.length; i++){
+        if (array[i] < min) {
+          min = array[i];
+        }
+        return min;
+    }
   }
 }
 
 exports.max = function max (array) {
   if(array.length==0 || array === undefined)
-  {fds
-    return 0;
-  }
-  else 
-  {
-    var max = array[0];
-		for(var i = 0; i < array.length; i++){
-			if (array[i] > max) {
-				max = array[i];
-			}
-      return max;
+    {
+      return 0;
+    }
+    else 
+    {
+      var max = array[0];
+      for(var i = 0; i < array.length; i++){
+        if (array[i] > max) {
+          max = array[i];
+        }
+        return max;
+    }
   }
 }
 
@@ -47,5 +48,4 @@ exports.avg = function avg (array) {
         }
         return sum/array.length;
       }
-
 }

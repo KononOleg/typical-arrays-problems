@@ -7,12 +7,14 @@ exports.min = function min (array) {
     else 
     {
       var minimal = array[0];
-      for(var i = 0; i < array.length; i++){
-        if (array[i] < minimal) {
+      for(var i = 0; i < array.length; i++)
+      {
+        if (array[i] < minimal) 
+        {
           minimal = array[i];
-        }
-        return minimal;
+        } 
     }
+    return minimal;
   }
 }
 
@@ -24,12 +26,14 @@ exports.max = function max (array) {
     else 
     {
       var maximal = array[0];
-      for(var i = 0; i < array.length; i++){
-        if (array[i] > maximal) {
+      for(var i = 0; i < array.length; i++)
+      {
+        if (array[i] > maximal)
+        {
           maximal = array[i];
-        }
-        return maximal;
-    }
+        } 
+      } 
+    return maximal;
   }
 }
 
